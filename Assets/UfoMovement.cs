@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UfoMovement : MonoBehaviour
 {
-    public bool throttle => Input.GetKey(KeyCode.Space); 
+    public float throttle => Input.GetAxis("Trigger");
 
     public float pitchPower, rollPower, yawPower, enginePower;
 
@@ -12,7 +12,7 @@ public class UfoMovement : MonoBehaviour
 
     private void Update()
     {
-        if (throttle)
+        if (throttle != 0)
         {
             transform.position += transform.forward * enginePower * Time.deltaTime;
 
