@@ -47,7 +47,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   sphericalMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   seaLevel:
     m_OverrideState: 0
@@ -56,8 +56,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 6378100
   planetCenterPosition:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: -6378100, z: 0}
+    m_OverrideState: 1
+    m_Value: {x: 0, y: -9229742, z: 0}
   airDensityR:
     m_OverrideState: 0
     m_Value: 0.04534
@@ -74,8 +74,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 55261.973
   aerosolDensity:
-    m_OverrideState: 0
-    m_Value: 0.065
+    m_OverrideState: 1
+    m_Value: 0.107
   aerosolTint:
     m_OverrideState: 0
     m_Value: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -95,20 +95,20 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {fileID: 8900000, guid: b12da5bb4a0ba5d4d8c085c47a7ca071, type: 2}
   groundEmissionTexture:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: 647e6e71f6a3fa54d81378d4b35b181c, type: 3}
+    m_OverrideState: 1
+    m_Value: {fileID: 8900000, guid: cb76f6c136cf36e4aae51b3a5552d104, type: 2}
   groundEmissionMultiplier:
-    m_OverrideState: 0
-    m_Value: 10000
+    m_OverrideState: 1
+    m_Value: 9994.62
   planetRotation:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 27.2, z: 0}
   spaceEmissionTexture:
     m_OverrideState: 1
     m_Value: {fileID: 8900000, guid: 647e6e71f6a3fa54d81378d4b35b181c, type: 3}
   spaceEmissionMultiplier:
     m_OverrideState: 1
-    m_Value: 4273.1
+    m_Value: 200000
   spaceRotation:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
@@ -116,10 +116,10 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   alphaSaturation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   alphaMultiplier:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   horizonTint:
     m_OverrideState: 1
@@ -155,7 +155,7 @@ MonoBehaviour:
     m_Value: 1
   colorMode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   color:
     m_OverrideState: 0
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -164,7 +164,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   maxFogDistance:
     m_OverrideState: 1
-    m_Value: 5000
+    m_Value: 100
   mipFogMaxMip:
     m_OverrideState: 0
     m_Value: 0.5
@@ -182,7 +182,7 @@ MonoBehaviour:
     m_Value: 2000
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 1000
+    m_Value: 10000
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -222,6 +222,96 @@ MonoBehaviour:
   directionalLightsOnly:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-4148978756983061464
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1be1b6c95cd2e41b27903b9270817f, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 0
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.25
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.2
+  roundness:
+    m_OverrideState: 1
+    m_Value: 1
+  rounded:
+    m_OverrideState: 1
+    m_Value: 0
+  mask:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  opacity:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &-4098749035959537840
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598e2d32e2c7b0c418e030c3236d663a, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 1
+  spectralLut:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.149
+  m_MaxSamples:
+    m_OverrideState: 1
+    m_Value: 6
+--- !u!114 &-2951965850199486806
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6b00fcf518bb94a90b408492e07b44, type: 3}
+  m_Name: FilmGrain
+  m_EditorClassIdentifier: 
+  active: 1
+  type:
+    m_OverrideState: 1
+    m_Value: 9
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.334
+  response:
+    m_OverrideState: 1
+    m_Value: 0.8
+  texture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +330,10 @@ MonoBehaviour:
   - {fileID: -4151792930034644520}
   - {fileID: 7642060734654139733}
   - {fileID: 8740687564938072427}
+  - {fileID: -4098749035959537840}
+  - {fileID: -4148978756983061464}
+  - {fileID: -2951965850199486806}
+  - {fileID: 5820135209041198141}
 --- !u!114 &1745016904526633980
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -271,6 +365,52 @@ MonoBehaviour:
   fogType:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &5820135209041198141
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 1
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.441
+  scatter:
+    m_OverrideState: 1
+    m_Value: 0.7
+  tint:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  dirtTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  dirtIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+  anamorphic:
+    m_OverrideState: 0
+    m_Value: 1
+  m_Resolution:
+    m_OverrideState: 1
+    m_Value: 2
+  m_HighQualityPrefiltering:
+    m_OverrideState: 1
+    m_Value: 0
+  m_HighQualityFiltering:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &7642060734654139733
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -304,7 +444,7 @@ MonoBehaviour:
     m_Value: 2
   limitMax:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 14.087873
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -384,22 +524,22 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   adaptationMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   adaptationSpeedDarkToLight:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 3
   adaptationSpeedLightToDark:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   weightTextureMask:
     m_OverrideState: 0
     m_Value: {fileID: 0}
   histogramPercentages:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 40, y: 90}
   histogramUseCurveRemapping:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   targetMidGray:
     m_OverrideState: 0
@@ -443,7 +583,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2.85
+    m_Value: 4
   directLightingStrength:
     m_OverrideState: 1
     m_Value: 0
