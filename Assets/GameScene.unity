@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1964.4092, g: 2257.3477, b: 3551.1133, a: 1}
+  m_IndirectSpecularColor: {r: 1965.3262, g: 2258.373, b: 3552.6992, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -885,6 +885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653085466033}
+  - component: {fileID: 919132148561913612}
   m_Layer: 0
   m_Name: Ufo
   m_TagString: Untagged
@@ -892,6 +893,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132148561913612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148561913611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d170bc74fc323e4098c5191242d3453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pitchPower: 140
+  rollPower: 180
+  yawPower: 120
+  enginePower: 90
 --- !u!33 &2342156430213890195
 MeshFilter:
   m_ObjectHideFlags: 0
