@@ -17,13 +17,13 @@ public class UfoMovement : MonoBehaviour
         {
             transform.position += transform.forward * enginePower * Time.deltaTime;
 
-            activePitch = Input.GetAxisRaw("Vertical") * pitchPower * Time.deltaTime;
-            activeRoll = Input.GetAxisRaw("Horizontal") * rollPower * Time.deltaTime;
-            activeYaw = Input.GetAxisRaw("Yaw") * yawPower * Time.deltaTime;
+            activePitch = Input.GetAxisRaw("Vertical") * (pitchPower/1.5f) * Time.deltaTime;
+            activeRoll = Input.GetAxisRaw("Horizontal") * (rollPower / 1.5f) * Time.deltaTime;
+            activeYaw = Input.GetAxisRaw("Yaw") * (yawPower/1.5f) * Time.deltaTime;
 
-            transform.Rotate(activePitch * pitchPower * Time.deltaTime,
-                activeYaw * yawPower * Time.deltaTime,
-                -activeRoll * rollPower * Time.deltaTime,
+            transform.Rotate(activePitch * (pitchPower/1.5f) * Time.deltaTime,
+                activeYaw * (yawPower/1.5f) * Time.deltaTime,
+                -activeRoll * (rollPower / 1.5f) * Time.deltaTime,
                 Space.Self);
         }
         else
@@ -42,13 +42,13 @@ public class UfoMovement : MonoBehaviour
         {
             transform.position -= transform.forward * enginePower * Time.deltaTime;
 
-            activePitch = Input.GetAxisRaw("Vertical") * pitchPower * Time.deltaTime;
-            activeRoll = Input.GetAxisRaw("Horizontal") * rollPower * Time.deltaTime;
-            activeYaw = Input.GetAxisRaw("Yaw") * yawPower * Time.deltaTime;
+            activePitch = Input.GetAxisRaw("Vertical") * (pitchPower/1.5f) * Time.deltaTime;
+            activeRoll = Input.GetAxisRaw("Horizontal") * (rollPower / 1.5f) * Time.deltaTime;
+            activeYaw = Input.GetAxisRaw("Yaw") * (yawPower/1.5f) * Time.deltaTime;
 
-            transform.Rotate(activePitch * pitchPower * Time.deltaTime,
-                activeYaw * yawPower * Time.deltaTime,
-                -activeRoll * rollPower * Time.deltaTime,
+            transform.Rotate(activePitch * (pitchPower/1.5f) * Time.deltaTime,
+                activeYaw * (yawPower/1.5f) * Time.deltaTime,
+                -activeRoll * (rollPower / 1.5f) * Time.deltaTime,
                 Space.Self);
         }
         
