@@ -7,12 +7,30 @@ public class UfoMovement : MonoBehaviour
     public float throttle => Input.GetAxis("Trigger");
     public float throttle2 => Input.GetAxis("Trigger2");
 
-    public float pitchPower, rollPower, yawPower, enginePower;
+    private float pitchPower, rollPower, yawPower, enginePower;
 
     private float activeRoll, activePitch, activeYaw;
 
+    public bool isSteamDeck;
+
     private void Update()
     {
+        if (isSteamDeck)
+        {
+            pitchPower = 70;
+            rollPower = 90;
+            yawPower = 100;
+            enginePower = 35;
+        }
+        else
+        {
+            pitchPower = 140;
+            rollPower = 180;
+            yawPower = 200;
+            enginePower = 40;
+        }
+        
+        
         if (throttle != 0)
         {
             transform.position += transform.forward * enginePower * Time.deltaTime;

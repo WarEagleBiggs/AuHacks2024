@@ -69936,10 +69936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d170bc74fc323e4098c5191242d3453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pitchPower: 140
-  rollPower: 180
-  yawPower: 200
-  enginePower: 40
+  isSteamDeck: 1
 --- !u!114 &919132148561913613
 MonoBehaviour:
   m_ObjectHideFlags: 0
