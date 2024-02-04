@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4734.4766, g: 1972.2559, b: 9535.18, a: 1}
+  m_IndirectSpecularColor: {r: 4734.414, g: 1972.248, b: 9535.191, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12048,6 +12048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambulance
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b01bf41fc4bde8841a8bb34787270413,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ambulance
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01bf41fc4bde8841a8bb34787270413, type: 3}
 --- !u!1001 &296172043
@@ -23009,12 +23014,31 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.015501612
   m_Center: {x: -0.0012397816, y: -0.0008718523, z: 0.00051468133}
+--- !u!1 &622406588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b01bf41fc4bde8841a8bb34787270413,
+    type: 3}
+  m_PrefabInstance: {fileID: 292480806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &622406591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b01bf41fc4bde8841a8bb34787270413,
     type: 3}
   m_PrefabInstance: {fileID: 292480806}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &622406592
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622406588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.030016333
+  m_Center: {x: -7.228513e-10, y: 0.0094596855, z: 0.004401892}
 --- !u!1001 &625004423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69074,6 +69098,12 @@ MonoBehaviour:
   objectiveTxt: {fileID: 110851914}
   rGuide: {fileID: 1967073438}
   Ambulance: {fileID: 622406591}
+  Aliens:
+  - {fileID: 919132147498903200}
+  - {fileID: 242918088}
+  - {fileID: 1156535648}
+  - {fileID: 153302959}
+  - {fileID: 608532793}
 --- !u!1 &919132148782516619
 GameObject:
   m_ObjectHideFlags: 0

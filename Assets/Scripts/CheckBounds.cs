@@ -17,6 +17,8 @@ public class CheckBounds : MonoBehaviour
     public RotateGuide rGuide;
     public Transform Ambulance;
 
+    public List<GameObject> Aliens;
+
     private void Update()
     {
         crystalTxt.SetText(crystalCount.ToString() + "/30");
@@ -42,7 +44,17 @@ public class CheckBounds : MonoBehaviour
         {
             //pick up
             objectiveTxt.SetText("[ ] Find Help");
+            //remove THIS alien from Aliens list
+            Aliens.Remove(other.gameObject);
+            Destroy(other.gameObject);
             rGuide.playerTransform = Ambulance;
+            
+        } else if (other.tag == "Ambulance")
+        {
+            //pick up
+            objectiveTxt.SetText("[ ] Rescue Aliens");
+            rGuide.playerTransform = Aliens[0].transform;
+            alienCount++;
         }
     }
 }
