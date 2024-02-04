@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bounds
   - Crystal
+  - Alien
   layers:
   - Default
   - TransparentFX
