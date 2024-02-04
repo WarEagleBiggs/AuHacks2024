@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4734.4453, g: 1972.2363, b: 9535.172, a: 1}
+  m_IndirectSpecularColor: {r: 4734.3984, g: 1972.2363, b: 9535.164, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9895,6 +9895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WholeSequence: {fileID: 433845461}
+  HUD: {fileID: 1095985329}
   Page1: {fileID: 787653169}
   Page2: {fileID: 1301010127}
   currPage: 0
@@ -26177,7 +26178,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &799438882
 PrefabInstance:
@@ -54812,7 +54813,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a741024525f81b74ca788a6fc5cbf6ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a741024525f81b74ca788a6fc5cbf6ea,
         type: 3}

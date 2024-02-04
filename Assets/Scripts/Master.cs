@@ -5,6 +5,7 @@ using UnityEngine;
 public class Master : MonoBehaviour
 {
     public GameObject WholeSequence;
+    public GameObject HUD;
     public GameObject Page1;
     public GameObject Page2;
     public int currPage;
@@ -23,6 +24,7 @@ public class Master : MonoBehaviour
         //intro page
         currPage = 1;
         WholeSequence.SetActive(true);
+        HUD.SetActive(false);
         Page1.SetActive(true);
         Page2.SetActive(false);
         UFO_Script.enabled = false;
@@ -47,6 +49,7 @@ public class Master : MonoBehaviour
             
             Page2.SetActive(false);
             WholeSequence.SetActive(false);
+            HUD.SetActive(true);
             UFO_Script.enabled = true;
             Cam_Script.enabled = true;
         }
