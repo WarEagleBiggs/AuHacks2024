@@ -14,15 +14,26 @@ public class CheckBounds : MonoBehaviour
 
     public TextMeshProUGUI objectiveTxt;
 
+    public GameObject winScreen;
+    public GameObject HUD;
+
     public RotateGuide rGuide;
     public Transform Ambulance;
 
     public List<GameObject> Aliens;
+    public bool hasAlien;
 
     private void Update()
     {
         crystalTxt.SetText(crystalCount.ToString() + "/30");
         alienTxt.SetText(alienCount.ToString() + "/5");
+
+        if (alienCount >= 5 && crystalCount >= 30)
+        {
+            //win
+            HUD.SetActive(false);
+            winScreen.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -40,21 +51,24 @@ public class CheckBounds : MonoBehaviour
         {
             crystalCount++;
             Destroy(other.gameObject);
-        } else if (other.tag == "Alien")
+        } else if (other.tag == "Alien" && hasAlien == false)
         {
             //pick up
+            hasAlien = true;
             objectiveTxt.SetText("[ ] Find Help");
             //remove THIS alien from Aliens list
             Aliens.Remove(other.gameObject);
             Destroy(other.gameObject);
             rGuide.playerTransform = Ambulance;
             
-        } else if (other.tag == "Ambulance")
+        } else if (other.tag == "Ambulance" && hasAlien)
         {
             //pick up
+            hasAlien = false;
             objectiveTxt.SetText("[ ] Rescue Aliens");
-            rGuide.playerTransform = Aliens[0].transform;
             alienCount++;
+            rGuide.playerTransform = Aliens[0].transform;
+            
         }
     }
 }
