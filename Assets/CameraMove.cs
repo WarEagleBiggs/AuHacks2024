@@ -15,10 +15,9 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Swap"))
+        if (Input.GetButtonDown("Swap"))
         {
             //swap
-            Debug.Log("Hit");
             if (!isPos1)
             {
                 Camera.transform.position = Position1.transform.position;

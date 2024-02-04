@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4655.2734, g: 2278.1953, b: 10092.844, a: 1}
+  m_IndirectSpecularColor: {r: 4561.7344, g: 2222.8203, b: 9858.031, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1109,7 +1109,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4105671971139968824}
-  m_Mesh: {fileID: 289301614986012343, guid: c6739d397c548ae4a9f40300f797bc86, type: 3}
+  m_Mesh: {fileID: 289301614986012343, guid: 6a2d7a8ee5beaf941a59c0d8f5391599, type: 3}
 --- !u!33 &3260616448025567706
 MeshFilter:
   m_ObjectHideFlags: 0
