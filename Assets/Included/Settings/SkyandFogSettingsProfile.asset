@@ -90,19 +90,19 @@ MonoBehaviour:
     m_Value: 8
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+    m_Value: {r: 1, g: 0.31740123, b: 0, a: 1}
   groundColorTexture:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: b12da5bb4a0ba5d4d8c085c47a7ca071, type: 2}
+    m_Value: {fileID: 8900000, guid: 10cfa4323b0b47242b01396fe375ab74, type: 3}
   groundEmissionTexture:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: cb76f6c136cf36e4aae51b3a5552d104, type: 2}
+    m_Value: {fileID: 8900000, guid: 10cfa4323b0b47242b01396fe375ab74, type: 3}
   groundEmissionMultiplier:
     m_OverrideState: 1
     m_Value: 9994.62
   planetRotation:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 27.2, z: 0}
+    m_Value: {x: 143.5, y: -32.05, z: 0}
   spaceEmissionTexture:
     m_OverrideState: 1
     m_Value: {fileID: 8900000, guid: 647e6e71f6a3fa54d81378d4b35b181c, type: 3}
@@ -123,7 +123,7 @@ MonoBehaviour:
     m_Value: 1
   horizonTint:
     m_OverrideState: 1
-    m_Value: {r: 0.6792453, g: 0, b: 0.5017808, a: 1}
+    m_Value: {r: 0.6784314, g: 0, b: 0.2780248, a: 1}
   zenithTint:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
