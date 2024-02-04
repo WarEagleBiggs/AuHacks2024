@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Master : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class Master : MonoBehaviour
         if (Input.GetButtonDown("PressX") )
         {
             ControlsUI.SetActive(!ControlsUI.activeSelf);
+        } 
+        if (Input.GetButtonDown("PressB") )
+        {
+            SceneManager.LoadScene(0);
         } 
         
         if (Input.GetButtonDown("PressA") && currPage == 1)
