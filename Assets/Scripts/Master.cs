@@ -15,21 +15,27 @@ public class Master : MonoBehaviour
 
     public UfoMovement UFO_Script;
     public CameraMove Cam_Script;
+
+    public bool isMenu;
     void Start()
     {
-        
         //mouse
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        if (!isMenu)
+        {
+            
+            //intro page
+            currPage = 1;
+            WholeSequence.SetActive(true);
+            HUD.SetActive(false);
+            Page1.SetActive(true);
+            Page2.SetActive(false);
+            UFO_Script.enabled = false;
+            Cam_Script.enabled = false;
+        }
         
-        //intro page
-        currPage = 1;
-        WholeSequence.SetActive(true);
-        HUD.SetActive(false);
-        Page1.SetActive(true);
-        Page2.SetActive(false);
-        UFO_Script.enabled = false;
-        Cam_Script.enabled = false;
+        
     }
 
     // Update is called once per frame
@@ -39,7 +45,7 @@ public class Master : MonoBehaviour
         {
             ControlsUI.SetActive(!ControlsUI.activeSelf);
         } 
-        if (Input.GetButtonDown("PressB") )
+        if (Input.GetButtonDown("PressB") && !isMenu )
         {
             SceneManager.LoadScene(0);
         } 
@@ -58,5 +64,14 @@ public class Master : MonoBehaviour
             UFO_Script.enabled = true;
             Cam_Script.enabled = true;
         }
+        
+        if (Input.GetButtonDown("PressA") && isMenu)
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (Input.GetButtonDown("PressB") && isMenu)
+        {
+            Application.Quit();
+        } 
     }
 }
