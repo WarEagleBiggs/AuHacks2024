@@ -9,6 +9,8 @@ public class Master : MonoBehaviour
     public GameObject Page2;
     public int currPage;
 
+    public GameObject ControlsUI;
+
     public UfoMovement UFO_Script;
     public CameraMove Cam_Script;
     void Start()
@@ -30,6 +32,11 @@ public class Master : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("PressX") )
+        {
+            ControlsUI.SetActive(!ControlsUI.activeSelf);
+        } 
+        
         if (Input.GetButtonDown("PressA") && currPage == 1)
         {
             currPage++;
