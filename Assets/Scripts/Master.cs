@@ -12,6 +12,7 @@ public class Master : MonoBehaviour
     public int currPage;
 
     public GameObject ControlsUI;
+    public GameObject ArtUI;
 
     public UfoMovement UFO_Script;
     public CameraMove Cam_Script;
@@ -48,6 +49,10 @@ public class Master : MonoBehaviour
         if (Input.GetButtonDown("PressB") && !isMenu )
         {
             SceneManager.LoadScene(0);
+        } 
+        if (Input.GetButtonDown("PressY") )
+        {
+            ArtUI.SetActive(!ArtUI.activeSelf);
         } 
         
         if (Input.GetButtonDown("PressA") && currPage == 1)

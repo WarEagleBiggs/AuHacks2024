@@ -373,4 +373,20 @@ InputManager:
     type: 0
     axis: 3
     joyNum: 0
+  - serializedVersion: 3
+    m_Name: PressY
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick button 3
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 3
+    joyNum: 0
   m_UsePhysicalKeys: 0
