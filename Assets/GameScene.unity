@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4734.414, g: 1972.248, b: 9535.191, a: 1}
+  m_IndirectSpecularColor: {r: 4517.3984, g: 1964.2598, b: 9471.789, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10619,6 +10619,7 @@ MonoBehaviour:
   ControlsUI: {fileID: 1965751096}
   UFO_Script: {fileID: 919132148561913612}
   Cam_Script: {fileID: 919132148561913613}
+  isMenu: 0
 --- !u!1001 &258313342
 PrefabInstance:
   m_ObjectHideFlags: 0
